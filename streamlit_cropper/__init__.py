@@ -107,7 +107,7 @@ def st_cropper(img: Image, realtime_update: bool=True, box_color: str='blue', as
     if return_type.lower() not in supported_types:
         raise ValueError(f"{return_type} is not a supported value for return_type, try one of {supported_types}")
     # Load the image and resize to be no wider than the streamlit widget size 
-    img = _resize_img(img)
+    # img = _resize_img(img)
 
     # Find a default box
     if not box_algorithm:
